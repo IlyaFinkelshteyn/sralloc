@@ -28,7 +28,7 @@ build:
 #---------------------------------#
 
 test_script:
-  -  C:\projects\sralloc\examples\Build\x64_%CONFIGURATION%g\unittest.exe
+  -  C:\projects\sralloc\examples\Build\x64_%CONFIGURATION%\unittest.exe
   - '%APPVEYOR_BUILD_FOLDER%\examples\build\%PLATFORM%_%CONFIGURATION%\unittest.exe'
 
 # to disable automatic tests
