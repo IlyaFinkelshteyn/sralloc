@@ -28,6 +28,7 @@ build:
 #---------------------------------#
 
 test_script:
+  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
   -  C:\projects\sralloc\examples\Build\x64_%CONFIGURATION%\unittest.exe
   - '%APPVEYOR_BUILD_FOLDER%\examples\build\%PLATFORM%_%CONFIGURATION%\unittest.exe'
 
