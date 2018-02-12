@@ -32,3 +32,5 @@ test_script:
 
 # to disable automatic tests
 #test: off
+on_finish:
+  - dir /s %APPVEYOR_BUILD_FOLDER%\examples\build
